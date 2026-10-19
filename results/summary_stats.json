@@ -1,0 +1,158 @@
+{
+  "n_players": 90189,
+  "n_gate30": 44700,
+  "n_gate40": 45489,
+  "share_gate30": 49.56,
+  "srm_chi2": 6.9,
+  "srm_p": 0.0086,
+  "max_rounds": 49854,
+  "second_max_rounds": 2961,
+  "share_zero_rounds": 4.4,
+  "share_reached_30": 36.9,
+  "mde7_pp": 0.74,
+  "mde1_pp": 0.93,
+  "n_needed_05pp": 95737,
+  "frequentist": [
+    {
+      "metric": "retention_1",
+      "gate_30": 0.44819,
+      "gate_40": 0.44228,
+      "diff_pp": -0.59052,
+      "ci95_low_pp": -1.23924,
+      "ci95_high_pp": 0.05821,
+      "relative_change_pct": -1.31757,
+      "z": -1.78409,
+      "p_value": 0.07441
+    },
+    {
+      "metric": "retention_7",
+      "gate_30": 0.1902,
+      "gate_40": 0.182,
+      "diff_pp": -0.82013,
+      "ci95_low_pp": -1.32816,
+      "ci95_high_pp": -0.3121,
+      "relative_change_pct": -4.3119,
+      "z": -3.16436,
+      "p_value": 0.00155
+    }
+  ],
+  "perm_p_retention7": 0.0017,
+  "rounds": {
+    "mean_30": 51.34,
+    "mean_40": 51.3,
+    "diff": -0.04,
+    "ci": [
+      -1.36,
+      1.27
+    ],
+    "median_30": 17.0,
+    "median_40": 16.0,
+    "mannwhitney_p": 0.0509
+  },
+  "bayesian": {
+    "retention_1": {
+      "prob_gate30_better": 0.9623,
+      "expected_loss_choose_gate40_pp": 0.5947,
+      "expected_loss_choose_gate30_pp": 0.005,
+      "credible_interval_pp": [
+        -1.238,
+        0.06
+      ]
+    },
+    "retention_7": {
+      "prob_gate30_better": 0.9992,
+      "expected_loss_choose_gate40_pp": 0.8195,
+      "expected_loss_choose_gate30_pp": 0.0001,
+      "credible_interval_pp": [
+        -1.328,
+        -0.309
+      ]
+    }
+  },
+  "segments": [
+    {
+      "segment": "0 rounds",
+      "n_gate30": 1937,
+      "n_gate40": 2057,
+      "ret7_gate30": 0.826,
+      "ret7_gate40": 0.632,
+      "diff_pp": -0.194,
+      "ci_low_pp": -0.7229,
+      "ci_high_pp": 0.3349,
+      "p_value": 0.4703967288770825,
+      "p_holm": 1.0,
+      "share_gate30_pct": 4.3333,
+      "share_gate40_pct": 4.522
+    },
+    {
+      "segment": "1-9",
+      "n_gate30": 14898,
+      "n_gate40": 15345,
+      "ret7_gate30": 1.8056,
+      "ret7_gate40": 1.8247,
+      "diff_pp": 0.0191,
+      "ci_low_pp": -0.2818,
+      "ci_high_pp": 0.32,
+      "p_value": 0.9010758594918578,
+      "p_holm": 1.0,
+      "share_gate30_pct": 33.3289,
+      "share_gate40_pct": 33.7334
+    },
+    {
+      "segment": "10-29",
+      "n_gate30": 11209,
+      "n_gate40": 11474,
+      "ret7_gate30": 8.1096,
+      "ret7_gate40": 7.3383,
+      "diff_pp": -0.7712,
+      "ci_low_pp": -1.4662,
+      "ci_high_pp": -0.0762,
+      "p_value": 0.02956848849217958,
+      "p_holm": 0.1478424424608979,
+      "share_gate30_pct": 25.0761,
+      "share_gate40_pct": 25.2237
+    },
+    {
+      "segment": "30-39",
+      "n_gate30": 3090,
+      "n_gate40": 2786,
+      "ret7_gate30": 15.7282,
+      "ret7_gate40": 15.6856,
+      "diff_pp": -0.0426,
+      "ci_low_pp": -1.9057,
+      "ci_high_pp": 1.8206,
+      "p_value": 0.9642707924842816,
+      "p_holm": 1.0,
+      "share_gate30_pct": 6.9128,
+      "share_gate40_pct": 6.1246
+    },
+    {
+      "segment": "40-99",
+      "n_gate30": 7398,
+      "n_gate40": 7479,
+      "ret7_gate30": 32.9008,
+      "ret7_gate40": 29.389,
+      "diff_pp": -3.5118,
+      "ci_low_pp": -4.9992,
+      "ci_high_pp": -2.0245,
+      "p_value": 3.742542975390998e-06,
+      "p_holm": 2.245525785234599e-05,
+      "share_gate30_pct": 16.5503,
+      "share_gate40_pct": 16.4413
+    },
+    {
+      "segment": "100+",
+      "n_gate30": 6168,
+      "n_gate40": 6348,
+      "ret7_gate30": 71.1414,
+      "ret7_gate40": 71.0302,
+      "diff_pp": -0.1111,
+      "ci_low_pp": -1.6998,
+      "ci_high_pp": 1.4775,
+      "p_value": 0.890952341379925,
+      "p_holm": 1.0,
+      "share_gate30_pct": 13.7987,
+      "share_gate40_pct": 13.955
+    }
+  ]
+}
